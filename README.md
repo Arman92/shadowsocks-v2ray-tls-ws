@@ -13,6 +13,12 @@ sudo sh get-docker.sh
 sudo apt  install docker-compose
 ```
 
+#### Clone this repo
+```bash
+git clone https://github.com/Arman92/shadowsocks-v2ray-tls-ws.git
+cd shadowsocks-v2ray-tls-ws
+```
+
 ### Setup CloudFlare as your DNS server and proxy the DNS requests
 There are lots of tutorials to setup your domain and server with CloudFlare DNS service, here is a good example:
 https://www.youtube.com/watch?v=XQKkb84EjNQ
