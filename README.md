@@ -52,7 +52,17 @@ And finially:
 docker-compose up -d
 ```
 
-On your clients you should install shadowsocks with v2ray plugin
+On your clients (e.g. Android, iOS, Windows) you should install shadowsocks with v2ray plugin.
+
+### Generating connection strings
+
+There's a mini node project in utils for doing so. Make sure to install dependencies before running it:
+
+```
+npm i
+node calc.js
+```
+
 ### Android
 
  - [Shadowsocks](https://play.google.com/store/apps/details?id=com.github.shadowsocks&hl=en_GB&gl=US)
