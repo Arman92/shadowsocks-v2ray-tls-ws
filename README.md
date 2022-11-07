@@ -10,7 +10,7 @@ You need to open `443` and `80` ports on your server, make sure these ports are 
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
-sudo apt  install docker-compose
+sudo apt install docker-compose
 ```
 
 #### Clone this repo
