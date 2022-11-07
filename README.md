@@ -112,3 +112,5 @@ node calc.js
 - To enable the proxy in your system, right-click on the Shadowsocks icon in the system tray and check `System Proxy > PAC`. For more information, you can take a look at [here](https://github.com/shadowsocks/shadowsocks-windows/blob/main/README.md).
 
 
+### Linux
+  Google?
