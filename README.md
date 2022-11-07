@@ -94,6 +94,9 @@ node calc.js
  - [Shadowsocks](https://play.google.com/store/apps/details?id=com.github.shadowsocks&hl=en_GB&gl=US)
  - [Shadowsocks V2Ray Plugin](https://play.google.com/store/apps/details?id=com.github.shadowsocks.plugin.v2ray&hl=en_GB&gl=US) (This is only a plugin and not a runnable application. But you need to download and install this as well. Shadowsocks will use this plugin to connect to server.)
 
+ ### iOS
+ - [ShadowRock](https://apps.apple.com/us/app/shadowrocket/id932747118)
+
 
 ### Windows
 - Download Shadowsocks from [releases](https://github.com/shadowsocks/shadowsocks-windows/releases) of [shadow-socks-windows](https://github.com/shadowsocks/shadowsocks-windows) repo.
