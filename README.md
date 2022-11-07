@@ -55,10 +55,36 @@ docker-compose up -d
 On your clients (e.g. Android, iOS, Windows) you should install shadowsocks with v2ray plugin.
 
 ### Generating connection strings
+Using the bash script you can easily generate importable Shadowsocks links:
 
-There's a mini node project in utils for doing so. Make sure to install dependencies before running it:
+Note: The server configs are read from `.env` file
+```bash
+./genLinks.sh
+```
+
+It will result to something like this:
 
 ```
+*********************
+
+Link for Shadowrock on iOS:
+
+ss://YWVzLTI1Ni1nY206c29tZS1zdHJvbmctcGFzc3dvcmRAeW91ci1kb21haW4uY29tOjQ0Mw?v2ray-plugin=eyJob3N0IjoieW91ci1kb21haW4uY29tIiwgInBhdGgiOiAiL3RoZXBhdGgiLCAibXV4IjogdHJ1ZSwgIm1vZGUiOiAid2Vic29ja2V0IiwgInRscyI6IHRydWV9Cg
+
+*********************
+
+Link for Android and Windows clients:
+
+ss://YWVzLTI1Ni1nY206c29tZS1zdHJvbmctcGFzc3dvcmQ@your-domain.com:443?plugin=v2ray-plugin%3Bpath%3D%2Fthepath%3Bhost%3Dyour-domain.com%3Btls
+
+*********************
+```
+
+
+Alternatively, you can use the mini node project in utils for doing so. Make sure to install dependencies before running it:
+
+```
+# Note: You'll need to update the variables in the calc.js manually
 npm i
 node calc.js
 ```
@@ -66,12 +92,9 @@ node calc.js
 ### Android
 
  - [Shadowsocks](https://play.google.com/store/apps/details?id=com.github.shadowsocks&hl=en_GB&gl=US)
- - [Shadowsocks V2Ray Plugin](https://play.google.com/store/apps/details?id=com.github.shadowsocks.plugin.v2ray&hl=en_GB&gl=US) (This is only a plugin and not a runnable application. you'll need this in the main Shadowsocks application)
+ - [Shadowsocks V2Ray Plugin](https://play.google.com/store/apps/details?id=com.github.shadowsocks.plugin.v2ray&hl=en_GB&gl=US) (This is only a plugin and not a runnable application. But you need to download and install this as well. Shadowsocks will use this plugin to connect to server.)
 
-Here's an example configuration with the default password and domain in `.env` file:
-```
-ss://YWVzLTI1Ni1nY206c29tZS1zdHJvbmctcGFzc3dvcmQ@domain.com:443?plugin=v2ray-plugin%3Bpath%3D%2Fv2ray%3Bhost%3Ddomain.com%3Btls
-```
+
 ### Windows
 - Download Shadowsocks from [releases](https://github.com/shadowsocks/shadowsocks-windows/releases) of [shadow-socks-windows](https://github.com/shadowsocks/shadowsocks-windows) repo.
 - Download the latest version of [v2ray-plugin](https://github.com/shadowsocks/v2ray-plugin) from [releases](https://github.com/shadowsocks/v2ray-plugin/releases).
